@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Animated, Easing } from 'react-native';
 
-const withAnimation = (Component) => class withAnimation extends React.Component {
+const withScaleAnimation = (Component) => class withScaleAnimation extends React.Component {
   static propTypes = {
     onPress: React.PropTypes.func,
   }
@@ -55,4 +55,4 @@ const withAnimation = (Component) => class withAnimation extends React.Component
   }
 };
 
-export default withAnimation;
+export default withScaleAnimation;

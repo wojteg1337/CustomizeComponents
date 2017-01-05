@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import withAnimation from './withAnimation';
+import withScaleAnimation from './withScaleAnimation';
 
 export default function Button({
   onPress,
@@ -37,7 +37,7 @@ Button.Brown = ({ onPress }) => (
     />
 );
 
-export const AnimatedBasicButton = withAnimation(Button);
+export const AnimatedBasicButton = withScaleAnimation(Button);
 
 const styles = StyleSheet.create({
   button: {
